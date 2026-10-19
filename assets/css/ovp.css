@@ -167,3 +167,12 @@
 	-webkit-mask-image: radial-gradient(ellipse at center, #000 62%, transparent 100%);
 	mask-image: radial-gradient(ellipse at center, #000 62%, transparent 100%);
 }
+
+/* ---- Cómo ganamos dinero (SaaS) ---- */
+.saas-fases .fecha { color: #00a8cc; border-bottom-color: rgba(0,168,204,0.5); font-size: 1.4em; }
+.saas-fases { margin-bottom: 2.5em; }
+.planes table { text-align: left; }
+.planes td:first-child { font-weight: 700; color: #fff; }
+.planes td:last-child { color: #00a8cc; white-space: nowrap; }
+.planes td:last-child strong { color: #00a8cc; font-size: 1.15em; }
+#saas .cifras { margin-top: 1.5em; }
