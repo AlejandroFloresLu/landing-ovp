@@ -136,23 +136,18 @@
 .encaje + .encaje, .table-wrapper + .table-wrapper { margin-top: 1.5em; }
 .productos { margin-top: 1.5em; font-size: 1em; }
 
-/* ---- «Lo validamos en el campo»: legible de lejos ---- */
-#evidencia header.major h2 { font-size: 2.6em; font-weight: 700; }
-#evidencia header.major p { font-size: 1.25em; color: #fff; }
-#evidencia .tarjeta * { color: #0b1d3a; }
-#evidencia .tarjeta { height: 100%;
-	background: #ffffff; border-radius: 10px; padding: 1.6em 1.4em;
-	box-shadow: 0 8px 24px rgba(0,0,0,0.18);
-}
-#evidencia .cifras { gap: 0; }
-#evidencia .cifras .cifra { font-size: 4.2em; font-weight: 700; color: #003b81; }
-#evidencia .cifras p { font-size: 1.2em; line-height: 1.5; }
-#evidencia .cifras strong { color: #003b81; }
+/* ---- «Lo validamos en el campo»: mismo estilo de la plantilla, legible de lejos ---- */
+#evidencia header.major h2 { font-size: 2.4em; }
+#evidencia header.major p { font-size: 1.2em; color: #fff; }
+#evidencia .cifras .cifra { font-size: 4.6em; font-weight: 300; color: #fff; margin-bottom: 0.15em; }
+#evidencia .cifras p { font-size: 1.2em; font-weight: 400; line-height: 1.55; color: #fff; }
+#evidencia .cifras strong { font-weight: 700; color: #fff; }
+#evidencia .tarjeta { border-top: 2px solid rgba(255,255,255,0.6); padding-top: 1.4em; }
 #evidencia .citas blockquote {
-	background: #0b1d3a; color: #fff; border-left: 6px solid #fff; border-radius: 8px;
-	padding: 1.2em 1.4em; font-size: 1.2em; line-height: 1.6;
+	border-left: 4px solid #fff; color: #fff;
+	font-size: 1.25em; font-weight: 400; line-height: 1.6; font-style: italic;
 }
-#evidencia .citas blockquote span { color: #cfeaf5; opacity: 1; }
+#evidencia .citas blockquote span { color: #fff; opacity: 0.9; font-weight: 400; }
 
 /* ---- Bloques laterales: una sola ilustración, sin repetir el fondo ---- */
 .spotlight.aurelio-spot { background-image: none !important; background-color: #d9eff7 !important; }
