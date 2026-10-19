@@ -1,0 +1,97 @@
+/* Ajustes de OVP sobre la plantilla Landed (paleta PUCE e ilustraciones de Aurelio) */
+
+/* Banner: Aurelio y botones */
+#banner .content .image img { object-fit: contain; background: transparent; }
+#banner .content .image { border-radius: 0; box-shadow: none; background: transparent; }
+#banner .content .image:before, #banner .content .image:after { display: none; }
+.banner-actions { margin-top: 1.5em; }
+
+/* Ilustraciones de Aurelio en los bloques laterales */
+.spotlight .image.main.aurelio-bg {
+	background: linear-gradient(135deg, #e6f6fb 0%, #cfeaf5 100%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.spotlight .image.main.aurelio-bg img {
+	object-fit: contain;
+	width: 70%;
+	height: 70%;
+	max-height: 520px;
+}
+.spotlight .image.main.aurelio-bg:after { display: none; }
+
+/* Pasos */
+.paso { position: relative; }
+.paso img { width: 150px; height: 150px; object-fit: contain; margin-bottom: 1em; }
+.paso-num {
+	display: inline-flex; align-items: center; justify-content: center;
+	width: 2.4em; height: 2.4em; border-radius: 50%;
+	background: #00a8cc; color: #fff; font-weight: 700;
+	position: absolute; top: 0; left: 50%; margin-left: -5.5em;
+}
+
+/* Evidencia */
+.evidencia .cifra { font-size: 3em; font-weight: 300; color: #fff; margin-bottom: 0.2em; line-height: 1; }
+.cita { font-size: 1.3em; font-style: italic; max-width: 40em; margin: 2em auto 0; border-left-color: #00a8cc; text-align: left; }
+.cita span { font-size: 0.75em; font-style: normal; opacity: 0.8; }
+
+/* Equipo */
+.equipo .iniciales {
+	display: inline-flex; align-items: center; justify-content: center;
+	width: 5em; height: 5em; border-radius: 50%;
+	border: 2px solid #ffffff; background: #0b1d3a; color: #ffffff; font-size: 1.2em; font-weight: 700;
+	margin-bottom: 0.8em;
+}
+.equipo h3 { margin-bottom: 0.2em; }
+.equipo { margin-bottom: 2.5em; }
+
+/* Marcas de contenido pendiente: BORRAR antes de publicar */
+.pendiente {
+	background: #fff3b0 !important;
+	color: #5c4400 !important;
+	border-radius: 4px;
+	padding: 0.15em 0.5em;
+	display: inline-block;
+}
+.pendiente-boton { outline: 3px dashed #ffd400; outline-offset: 3px; }
+
+/* Bloques laterales en escritorio: Aurelio sobre fondo claro (la plantilla usa la imagen como fondo) */
+.spotlight.aurelio-spot:before { display: none; }
+.spotlight.aurelio-spot {
+	background-color: #d9eff7 !important;
+	background-repeat: no-repeat !important;
+	background-size: auto 60% !important;
+}
+#problema.aurelio-spot { background-position: 50% 6% !important; background-size: auto 46% !important; }
+#aurelio.aurelio-spot { background-position: 22% 50% !important; }
+#admisiones.aurelio-spot { background-position: 78% 50% !important; }
+
+/* ---- Secciones del pitch ---- */
+.cifras .cifra { font-size: 2.8em; font-weight: 300; line-height: 1.1; margin-bottom: 0.3em; color: #fff; }
+.wrapper.style1 .cifras .cifra { color: #00a8cc; }
+.cifras p { margin-bottom: 0.5em; }
+.citas blockquote { text-align: left; font-style: italic; border-left-color: #fff; margin-top: 1.5em; }
+.citas blockquote span { display: block; font-style: normal; font-size: 0.85em; opacity: 0.85; margin-top: 0.6em; }
+.nota { font-size: 0.85em; opacity: 0.75; margin-top: 2em; }
+
+/* Video incrustado 16:9 */
+.video { position: relative; width: 100%; max-width: 900px; margin: 0 auto; padding-top: 56.25%; border-radius: 6px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.4); }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video-alt { font-size: 0.85em; opacity: 0.75; margin-top: 1em; }
+
+/* Meta del PMV: esperado vs obtenido */
+.meta { max-width: 700px; margin: 2em auto 0; }
+.meta-barra { position: relative; height: 4.2em; background: rgba(255,255,255,0.15); border-radius: 6px; overflow: hidden; }
+.meta-barra span { position: absolute; left: 0; display: flex; align-items: center; padding-left: 0.8em; font-size: 0.85em; font-weight: 700; white-space: nowrap; }
+.meta-esperado { top: 0; height: 50%; background: rgba(255,255,255,0.35); color: #0b1d3a; }
+.meta-obtenido { bottom: 0; height: 50%; background: #0b1d3a; color: #fff; }
+
+/* Tabla comparativa */
+.comparacion { text-align: left; }
+.comparacion th:last-child, .comparacion td:last-child { color: #00a8cc; }
+.comparacion td:first-child { font-weight: 700; color: #fff; }
+
+/* Hoja de ruta */
+.ruta .fecha { font-size: 1.6em; font-weight: 700; color: #fff; margin-bottom: 0.2em; border-bottom: 2px solid rgba(255,255,255,0.4); padding-bottom: 0.3em; }
+.ruta p { text-align: left; }
