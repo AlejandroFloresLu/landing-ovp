@@ -95,3 +95,39 @@
 /* Hoja de ruta */
 .ruta .fecha { font-size: 1.6em; font-weight: 700; color: #fff; margin-bottom: 0.2em; border-bottom: 2px solid rgba(255,255,255,0.4); padding-bottom: 0.3em; }
 .ruta p { text-align: left; }
+
+/* ---- Proceso del trabajo del cliente ---- */
+.proceso { list-style: none; padding: 0; margin: 0 0 2em; display: grid; grid-template-columns: repeat(8, 1fr); gap: 0.6em; }
+.proceso li { position: relative; padding: 2.4em 0.6em 0.8em; border: 1px solid rgba(255,255,255,0.25); border-radius: 6px; font-size: 0.8em; line-height: 1.4; }
+.proceso li span { position: absolute; top: 0.6em; left: 50%; transform: translateX(-50%); font-weight: 700; color: #00a8cc; }
+.proceso li.dolor { border-color: #ff6b6b; background: rgba(255,107,107,0.10); }
+.proceso li em { display: block; margin-top: 0.6em; font-style: normal; font-weight: 700; color: #ff8a8a; font-size: 0.9em; }
+.marcadores h4 { color: #ff8a8a; margin-bottom: 0.3em; }
+.marcadores p { font-size: 0.9em; text-align: left; }
+@media screen and (max-width: 980px) { .proceso { grid-template-columns: repeat(2, 1fr); } }
+
+/* ---- Lienzo de propuesta de valor ---- */
+.encaje { text-align: left; }
+.encaje td:first-child { font-style: italic; }
+.encaje td:last-child { font-weight: 700; color: #fff; }
+.alegrias { margin-top: 1em; }
+.alegrias .icon.major { margin-bottom: 0.6em; }
+
+/* ---- Business Model Canvas ---- */
+.bmc { display: grid; gap: 0.6em; text-align: left;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-areas:
+		"soc soc act act pro pro rel rel seg seg"
+		"soc soc rec rec pro pro can can seg seg"
+		"cos cos cos cos cos ing ing ing ing ing"; }
+.bmc-b { border: 1px solid rgba(255,255,255,0.2); border-radius: 6px; padding: 1em; background: rgba(255,255,255,0.03); }
+.bmc-b h4 { color: #00a8cc; font-size: 0.8em; margin-bottom: 0.5em; }
+.bmc-b ul { margin: 0; padding-left: 1.1em; }
+.bmc-b li { font-size: 0.78em; line-height: 1.45; margin-bottom: 0.4em; }
+.bmc-b.propuesta { border-color: #00a8cc; background: rgba(0,168,204,0.08); }
+.socios { grid-area: soc; } .actividades { grid-area: act; } .recursos { grid-area: rec; }
+.propuesta { grid-area: pro; } .relacion { grid-area: rel; } .canales { grid-area: can; }
+.segmentos { grid-area: seg; } .costos { grid-area: cos; } .ingresos { grid-area: ing; }
+@media screen and (max-width: 980px) {
+	.bmc { grid-template-columns: 1fr; grid-template-areas: "seg" "pro" "can" "rel" "ing" "rec" "act" "soc" "cos"; }
+}
