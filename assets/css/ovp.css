@@ -131,3 +131,44 @@
 @media screen and (max-width: 980px) {
 	.bmc { grid-template-columns: 1fr; grid-template-areas: "seg" "pro" "can" "rel" "ing" "rec" "act" "soc" "cos"; }
 }
+
+/* ---- Lienzo: segunda tabla y productos ---- */
+.encaje + .encaje, .table-wrapper + .table-wrapper { margin-top: 1.5em; }
+.productos { margin-top: 1.5em; font-size: 1em; }
+
+/* ---- «Lo validamos en el campo»: legible de lejos ---- */
+#evidencia header.major h2 { font-size: 2.6em; font-weight: 700; }
+#evidencia header.major p { font-size: 1.25em; color: #fff; }
+#evidencia .tarjeta * { color: #0b1d3a; }
+#evidencia .tarjeta { height: 100%;
+	background: #ffffff; border-radius: 10px; padding: 1.6em 1.4em;
+	box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+#evidencia .cifras { gap: 0; }
+#evidencia .cifras .cifra { font-size: 4.2em; font-weight: 700; color: #003b81; }
+#evidencia .cifras p { font-size: 1.2em; line-height: 1.5; }
+#evidencia .cifras strong { color: #003b81; }
+#evidencia .citas blockquote {
+	background: #0b1d3a; color: #fff; border-left: 6px solid #fff; border-radius: 8px;
+	padding: 1.2em 1.4em; font-size: 1.2em; line-height: 1.6;
+}
+#evidencia .citas blockquote span { color: #cfeaf5; opacity: 1; }
+
+/* ---- Bloques laterales: una sola ilustración, sin repetir el fondo ---- */
+.spotlight.aurelio-spot { background-image: none !important; background-color: #d9eff7 !important; }
+@media screen and (min-width: 981px) {
+	.spotlight.aurelio-spot .image.main {
+		display: flex !important; position: absolute; align-items: center; justify-content: center;
+		background: transparent !important; margin: 0;
+	}
+	.spotlight.aurelio-spot.right .image.main { left: 0; top: 0; bottom: 0; width: 58%; }
+	.spotlight.aurelio-spot.left .image.main { right: 0; top: 0; bottom: 0; width: 58%; }
+	.spotlight.aurelio-spot.bottom .image.main { left: 0; right: 0; top: 4%; height: 50%; }
+	.spotlight.aurelio-spot .image.main img { width: auto !important; height: auto !important; max-width: 80%; max-height: 80%; }
+}
+/* Fundir la ilustración con el fondo (las SVG traen su propio fondo celeste) */
+.spotlight.aurelio-spot { background-color: #d2e5f5 !important; }
+.spotlight.aurelio-spot .image.main img {
+	-webkit-mask-image: radial-gradient(ellipse at center, #000 62%, transparent 100%);
+	mask-image: radial-gradient(ellipse at center, #000 62%, transparent 100%);
+}
